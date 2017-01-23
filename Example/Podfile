@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ExhibitionSwift_Example' do
+  pod 'ExhibitionSwift', :path => '../'
+
+  target 'ExhibitionSwift_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
