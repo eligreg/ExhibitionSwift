@@ -128,7 +128,7 @@ controller.swClosure = { button, controller in
   controller.enableControllerInteractions()
 }
 
-closure.swClosure = { button, controller in
+closure.seClosure = { button, controller in
   controller.disableControllerInteractions()
   _ = controller.removeCurrentExhibitionImage() 
   controller.enableControllerInteractions()
