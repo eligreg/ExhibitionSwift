@@ -1,0 +1,27 @@
+{
+  "name": "ExhibitionSwift",
+  "version": "0.1.0",
+  "summary": "A short description of ExhibitionSwift.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/ExhibitionSwift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Eli Gregory": "eligreg@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/ExhibitionSwift.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ExhibitionSwift/Classes/**/*",
+  "resource_bundles": {
+    "ExhibitionSwift": [
+      "ExhibitionSwift/Assets/*.xcassets"
+    ]
+  }
+}

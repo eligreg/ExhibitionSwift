@@ -1,0 +1,6 @@
+framework module ExhibitionSwift {
+  umbrella header "ExhibitionSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

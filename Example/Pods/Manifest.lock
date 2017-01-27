@@ -1,0 +1,23 @@
+PODS:
+  - ExhibitionSwift (0.1.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+
+DEPENDENCIES:
+  - ExhibitionSwift (from `../`)
+  - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  ExhibitionSwift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ExhibitionSwift: 20a593347b91b925bc8acae478d82228b9afeb4b
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+
+PODFILE CHECKSUM: 3d3de84d5269916dfc139dd356b5735d16f4ddc6
+
+COCOAPODS: 1.1.1
