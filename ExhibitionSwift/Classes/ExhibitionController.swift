@@ -238,7 +238,7 @@ public class ExhibitionController: UIViewController, UIScrollViewDelegate {
         }
 
         let w = self.config.activityTheme.controllerActivitySize
-        var activity = newActivityView(self, CGSize(width:w, height:w))
+        let activity = newActivityView(self, CGSize(width:w, height:w))
         
         controllerActivity = UIViewController()
         controllerActivity?.view.backgroundColor = self.config.activityTheme.controllerBackgroundColor
@@ -491,13 +491,6 @@ public class ExhibitionController: UIViewController, UIScrollViewDelegate {
         pageControl.currentPageIndicatorTintColor = self.config.pageControlTheme.currentPageIndicatorColor
         
         view.backgroundColor = config.generalTheme.backgroundColor
-    }
-    
-    internal func insetForImage(image img: UIImage) -> UIEdgeInsets? {
-        let scale = UIScreen.main.scale
-        
-        
-        return nil
     }
     
     internal func userTappedButton(_ sender: UIButton) {
