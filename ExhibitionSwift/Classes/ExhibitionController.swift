@@ -10,7 +10,7 @@ import Foundation
 
 typealias XController = ExhibitionController
 
-public class ExhibitionController: UIViewController, UIScrollViewDelegate {
+open class ExhibitionController: UIViewController, UIScrollViewDelegate {
     
     public let config: ExhibitionConfig
     

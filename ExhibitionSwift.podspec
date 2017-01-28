@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = 'Exhibition is a mutable asynchronous image gallery that makes no assumptions. Exhibition does not assume what you want to do you with your image gallery but instead extends to you full and easy control mechanisms. Load an image from disk or remote url, add and delete images at will.'
+  s.description      = 'Exhibition is a mutable asynchronous image gallery that makes no assumptions. Exhibition does not assume what you want to do you with your image gallery but instead extends to you full and easy control mechanisms. Load an image from disk or remote url, add and delete images at will. Customize the UI.'
 
   s.homepage         = 'https://github.com/eligreg/ExhibitionSwift'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/eligreg/ExhibitionSwift.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '7.0'
 
   s.source_files = 'ExhibitionSwift/Classes/**/*'
 
