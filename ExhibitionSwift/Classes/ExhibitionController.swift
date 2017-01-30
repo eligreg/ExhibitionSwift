@@ -79,7 +79,7 @@ open class ExhibitionController: UIViewController, UIScrollViewDelegate {
     
     // MARK: UIViewController Lifecycle
     
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         
         nwButton.addTarget(self, action: #selector(userTappedButton), for: .touchUpInside)
@@ -90,20 +90,20 @@ open class ExhibitionController: UIViewController, UIScrollViewDelegate {
         self.setupLayout()
     }
     
-    override public func viewWillAppear(_ animated: Bool) {
+    override open func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.updateSubviews()
     }
     
-    override public func viewDidAppear(_ animated: Bool) {
+    override open func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
     
-    override public func viewWillDisappear(_ animated: Bool) {
+    override open func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
     }
     
-    override public func viewDidDisappear(_ animated: Bool) {
+    override open func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
     }
     
@@ -516,7 +516,7 @@ open class ExhibitionController: UIViewController, UIScrollViewDelegate {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override public var prefersStatusBarHidden: Bool {
+    override open var prefersStatusBarHidden: Bool {
         return config.hidesStatusBar
     }
 }
