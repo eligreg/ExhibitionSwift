@@ -1,5 +1,5 @@
 PODS:
-  - ExhibitionSwift (0.1.0)
+  - ExhibitionSwift (0.1.1)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ExhibitionSwift: 20a593347b91b925bc8acae478d82228b9afeb4b
+  ExhibitionSwift: 23f61dc241cf30262b424527b3a6590c60b1e22a
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
 
 PODFILE CHECKSUM: 3d3de84d5269916dfc139dd356b5735d16f4ddc6
