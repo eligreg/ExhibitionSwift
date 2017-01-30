@@ -79,7 +79,7 @@ open class ExhibitionController: UIViewController, UIScrollViewDelegate {
     
     // MARK: UIViewController Lifecycle
     
-    override open func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         
         nwButton.addTarget(self, action: #selector(userTappedButton), for: .touchUpInside)
@@ -90,7 +90,7 @@ open class ExhibitionController: UIViewController, UIScrollViewDelegate {
         self.setupLayout()
     }
     
-    override open func viewWillAppear(_ animated: Bool) {
+    open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.updateSubviews()
     }
