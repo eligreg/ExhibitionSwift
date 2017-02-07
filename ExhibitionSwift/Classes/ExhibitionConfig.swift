@@ -55,6 +55,10 @@ public class ExhibitionConfig {
         public var buttonsTitleColor: UIColor = XConfig.fgc
         public var buttonsTitleColorHighlighted: UIColor = XConfig.fgcTransparent
         public var bumper: CGFloat = 10
+        public var buttonsDropShadowColor: UIColor = XConfig.bgc
+        public var buttonsDropShadowOpacity: Float = 0.8
+        public var buttonsDropShadowRadius: CGFloat = 1.0
+        public var buttonsDropShadowOffset: CGSize = CGSize(width: 0.0, height: 0.0)
     }
     
     public struct ActivityTheme {

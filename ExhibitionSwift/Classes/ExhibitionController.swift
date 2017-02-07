@@ -65,7 +65,7 @@ open class ExhibitionController: UIViewController, UIScrollViewDelegate {
     public init(with images: [ExhibitionImageProtocol],
                 config: ExhibitionConfig = ExhibitionConfig(),
                 cache: ExhibitionCacheProtocol = ExhibitionCache(),
-                downloader: ExhibitionDownloader = ExhibitionDownloader())
+                downloader: ExhibitionDownloaderProtocol = ExhibitionDownloader())
     {
         self.config = config
         self.imageCache = cache
@@ -456,6 +456,10 @@ open class ExhibitionController: UIViewController, UIScrollViewDelegate {
         nwButton.isHidden = !self.config.nwButton.visible
         nwButton.setTitleColor(self.config.buttonsTheme.buttonsTitleColor, for: .normal)
         nwButton.setTitleColor(self.config.buttonsTheme.buttonsTitleColorHighlighted, for: .highlighted)
+        nwButton.layer.shadowColor = self.config.buttonsTheme.buttonsDropShadowColor.cgColor
+        nwButton.layer.shadowOpacity = self.config.buttonsTheme.buttonsDropShadowOpacity
+        nwButton.layer.shadowRadius = self.config.buttonsTheme.buttonsDropShadowRadius
+        nwButton.layer.shadowOffset = self.config.buttonsTheme.buttonsDropShadowOffset
         
         neButton.frame = CGRect(origin: CGPoint.zero, size: self.config.neButton.size)
         neButton.setTitle(self.config.neButton.title, for: .normal)
@@ -466,6 +470,10 @@ open class ExhibitionController: UIViewController, UIScrollViewDelegate {
         neButton.isHidden = !self.config.neButton.visible
         neButton.setTitleColor(self.config.buttonsTheme.buttonsTitleColor, for: .normal)
         neButton.setTitleColor(self.config.buttonsTheme.buttonsTitleColorHighlighted, for: .highlighted)
+        neButton.layer.shadowColor = self.config.buttonsTheme.buttonsDropShadowColor.cgColor
+        neButton.layer.shadowOpacity = self.config.buttonsTheme.buttonsDropShadowOpacity
+        neButton.layer.shadowRadius = self.config.buttonsTheme.buttonsDropShadowRadius
+        neButton.layer.shadowOffset = self.config.buttonsTheme.buttonsDropShadowOffset
         
         swButton.frame = CGRect(origin: CGPoint.zero, size: self.config.swButton.size)
         swButton.setTitle(self.config.swButton.title, for: .normal)
@@ -476,6 +484,10 @@ open class ExhibitionController: UIViewController, UIScrollViewDelegate {
         swButton.isHidden = !self.config.swButton.visible
         swButton.setTitleColor(self.config.buttonsTheme.buttonsTitleColor, for: .normal)
         swButton.setTitleColor(self.config.buttonsTheme.buttonsTitleColorHighlighted, for: .highlighted)
+        swButton.layer.shadowColor = self.config.buttonsTheme.buttonsDropShadowColor.cgColor
+        swButton.layer.shadowOpacity = self.config.buttonsTheme.buttonsDropShadowOpacity
+        swButton.layer.shadowRadius = self.config.buttonsTheme.buttonsDropShadowRadius
+        swButton.layer.shadowOffset = self.config.buttonsTheme.buttonsDropShadowOffset
         
         seButton.frame = CGRect(origin: CGPoint.zero, size: self.config.seButton.size)
         seButton.setTitle(self.config.seButton.title, for: .normal)
@@ -486,6 +498,10 @@ open class ExhibitionController: UIViewController, UIScrollViewDelegate {
         seButton.isHidden = !self.config.seButton.visible
         seButton.setTitleColor(self.config.buttonsTheme.buttonsTitleColor, for: .normal)
         seButton.setTitleColor(self.config.buttonsTheme.buttonsTitleColorHighlighted, for: .highlighted)
+        seButton.layer.shadowColor = self.config.buttonsTheme.buttonsDropShadowColor.cgColor
+        seButton.layer.shadowOpacity = self.config.buttonsTheme.buttonsDropShadowOpacity
+        seButton.layer.shadowRadius = self.config.buttonsTheme.buttonsDropShadowRadius
+        seButton.layer.shadowOffset = self.config.buttonsTheme.buttonsDropShadowOffset
         
         pageControl.pageIndicatorTintColor = self.config.pageControlTheme.pageIndicatorColor
         pageControl.currentPageIndicatorTintColor = self.config.pageControlTheme.currentPageIndicatorColor
