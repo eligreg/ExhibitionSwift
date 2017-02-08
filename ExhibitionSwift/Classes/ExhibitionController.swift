@@ -133,7 +133,7 @@ open class ExhibitionController: UIViewController, UIScrollViewDelegate {
 
         var remove: ExhibitionImageProtocol?
         
-        if exhibitionItems.contains(currentItem) && exhibitionItems[currentIndex] == currentItem {
+        if let current = currentItem, exhibitionItems.contains(current) && exhibitionItems[currentIndex] == current {
             let removeItem = exhibitionItems.remove(at: currentIndex)
             removeItem.removeFromSuperview()
             remove = removeItem.image
@@ -176,12 +176,12 @@ open class ExhibitionController: UIViewController, UIScrollViewDelegate {
         return Int((self.scrollView.contentOffset.x / self.scrollView.bounds.size.width) + 0.5)
     }
     
-    fileprivate var currentItem: ExhibitionItem {
-        return exhibitionItems[currentIndex]
+    fileprivate var currentItem: ExhibitionItem? {
+        return imageCount > 0 ? exhibitionItems[currentIndex] : nil
     }
     
-    public var currentImage: ExhibitionImageProtocol {
-        return currentItem.image
+    public var currentImage: ExhibitionImageProtocol? {
+        return currentItem?.image
     }
     
     public var imageCount: Int {

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ExhibitionSwift'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'Exhibition is a mutable asynchronous image gallery that makes no assumptions.'
 
 # This description is used to generate tags and improve search results.
